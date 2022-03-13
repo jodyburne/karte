@@ -1,0 +1,7 @@
+query GetGeocode($address: String!) {
+  geocode(address: $address) {
+    address
+    latitude
+    longitude
+  }
+}

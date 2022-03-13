@@ -1,0 +1,14 @@
+mutation CreateJob($pickup: String!, $dropoff: String!) {
+  job(pickup: $pickup, dropoff: $dropoff) {
+    pickup {
+      address
+      latitude
+      longitude
+    }
+    dropoff {
+      address
+      latitude
+      longitude
+    }
+  }
+}

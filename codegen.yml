@@ -1,0 +1,9 @@
+overwrite: true
+schema: "https://stuart-frontend-challenge.vercel.app/graphql"
+documents: "src/graphql/**/*.graphql"
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
