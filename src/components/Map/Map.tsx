@@ -20,7 +20,7 @@ type MapProps = {
 
 const Map: React.VFC<MapProps> = ({ pickUpMarker, dropOffMarker }) => (
   <GoogleMapReact
-    bootstrapURLKeys={{ key: "AIzaSyB9Dp2EgeBmtdRax67Gu2N06CD7AFB_XGs" }}
+    bootstrapURLKeys={{ key: "get your own key" }}
     defaultCenter={location}
     defaultZoom={15}
     style={{ height: "100%" }}
