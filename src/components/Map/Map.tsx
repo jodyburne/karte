@@ -1,6 +1,6 @@
 import GoogleMapReact from "google-map-react";
 import { IconType } from "../Icon";
-import Marker from "../Marker/Marker";
+import Marker from "../Marker";
 
 const location = {
   address: "Place de la Concorde, Paris",

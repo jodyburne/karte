@@ -22,7 +22,7 @@ const Container = styled.div<{
   cursor: pointer;
 `;
 
-const Toast: React.VFC<{ content?: string }> = ({ content }) => {
+const Toast: React.VFC<{ content: string }> = ({ content }) => {
   const [shouldShow, setShouldShow] = useState(true);
   useEffect(() => {
     setTimeout(() => setShouldShow(false), 5000);

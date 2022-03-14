@@ -1,9 +1,10 @@
 import { render, screen } from "@testing-library/react";
 import Toast from ".";
 
+const content = "Hello I am Ms Toast";
 describe("Toast component", () => {
-  it("it should render", () => {
-    render(<Toast />);
-    //expect(screen.container).toBeTruthy();
+  it("should render the content provided", () => {
+    render(<Toast content={content} />);
+    expect(screen.getByText(content).innerHTML).toBe(content);
   });
 });
